@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+    <div class="h-screen bg-fixed w-full bg-orange-300 flex justify-center items-center select-none">
+        <div class="absolute left-0 dark:bg-blend-darken text-slate-700 p-5 rounded-xl transform hover:scale-125 transition duration-500 ease-in-out border-purple-700 border-t-2 border-r-2">
+            <p>Developed By</p><span class="font-bold">Md Hasib Askari</span>
+        </div>
+        <div class="h-[640px] w-[350px] dark:bg-slate-700 bg-white p-5 rounded-2xl shadow-md shadow-black">
+            <div class="flex flex-col text-right text-white mb-5 overflow-x-clip">
+                <span id="result" class="h-[100px] text-7xl">0</span>
+                <span id="input" class="text-gray-500">-</span>
+            </div>
+            <div id="button" class="grid-cols-4 grid-rows-5 gap-5 inline-grid font-bold text-2xl text-orange-400 text-center">
+                <button class="p-1 shadow-md shadow-gray-800 rounded-xl btn-hover">AC</button>
+                <button class="text-orange-400 shadow-md shadow-gray-800 rounded-xl btn-hover">
+                    <svg class="btn-hover hover:scale-100 rounded-xl fill-orange-400 hover:fill-white w-full h-full p-3" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 6c0-.552-.448-1-1-1h-12.628c-.437 0-.853.191-1.138.523-1.078 1.256-3.811 4.439-4.993 5.815-.16.187-.241.419-.241.651 0 .231.08.463.24.651 1.181 1.38 3.915 4.575 4.994 5.835.285.333.701.525 1.14.525h12.626c.552 0 1-.448 1-1 0-2.577 0-9.423 0-12zm-13.628.5h12.128v11h-12.126l-4.715-5.51zm5.637 4.427 1.71-1.71c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.384-.219.531l-1.711 1.711 1.728 1.728c.147.147.22.339.22.53 0 .427-.349.751-.75.751-.192 0-.384-.073-.531-.219l-1.728-1.729-1.728 1.729c-.146.146-.339.219-.531.219-.401 0-.75-.324-.75-.751 0-.191.073-.383.22-.53l1.728-1.728-1.788-1.787c-.146-.148-.219-.339-.219-.532 0-.425.346-.749.751-.749.192 0 .384.073.53.219z" fill-rule="nonzero"/></svg>
+                </button>
+                <button class="shadow-md shadow-gray-800 rounded-xl btn-hover">%</button>
+                <button class="p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">&divide;</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">7</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">8</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">9</button>
+                <button class="p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">&times;</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">4</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">5</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">6</button>
+                <button class="p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">-</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">1</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">2</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">3</button>
+                <button class="p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">+</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">0</button>
+                <button class="text-slate-400 p-5 shadow-md shadow-gray-800 rounded-xl btn-hover">.</button>
+                <button class="text-white bg-orange-400  p-5 shadow-md shadow-gray-800 rounded-xl btn-hover col-span-2 font-bold">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
